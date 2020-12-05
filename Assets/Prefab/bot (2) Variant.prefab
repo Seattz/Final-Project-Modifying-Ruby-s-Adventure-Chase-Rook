@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1014102642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7117868288677526962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 588b3c6f4ad29ca49bdea7a6224f33f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  vertical: 0
+  changeTime: 3
+  smokeEffect: {fileID: 5798902315049892928, guid: 1e1a2cf1b6b48d34b9f75710f877a0af,
+    type: 3}
+--- !u!1001 &6659835424112519646
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4515916869679322216, guid: 7b7c17dc434af46468db2266e8672d4c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515916869679322216, guid: 7b7c17dc434af46468db2266e8672d4c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515916869679322216, guid: 7b7c17dc434af46468db2266e8672d4c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515916869679322216, guid: 7b7c17dc434af46468db2266e8672d4c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515916869679322216, guid: 7b7c17dc434af46468db2266e8672d4c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515916869679322216, guid: 7b7c17dc434af46468db2266e8672d4c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515916869679322216, guid: 7b7c17dc434af46468db2266e8672d4c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515916869679322216, guid: 7b7c17dc434af46468db2266e8672d4c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515916869679322216, guid: 7b7c17dc434af46468db2266e8672d4c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515916869679322216, guid: 7b7c17dc434af46468db2266e8672d4c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515916869679322216, guid: 7b7c17dc434af46468db2266e8672d4c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515916869679322217, guid: 7b7c17dc434af46468db2266e8672d4c,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9622642
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515916869679322217, guid: 7b7c17dc434af46468db2266e8672d4c,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.56737274
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515916869679322217, guid: 7b7c17dc434af46468db2266e8672d4c,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.56737274
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515916869679322219, guid: 7b7c17dc434af46468db2266e8672d4c,
+        type: 3}
+      propertyPath: smokeEffect
+      value: 
+      objectReference: {fileID: 1849030521779572228}
+    - target: {fileID: 4515916869679322220, guid: 7b7c17dc434af46468db2266e8672d4c,
+        type: 3}
+      propertyPath: m_Name
+      value: HarderBot (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515916869679322222, guid: 7b7c17dc434af46468db2266e8672d4c,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.4329288
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515916869679322222, guid: 7b7c17dc434af46468db2266e8672d4c,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.6290946
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027546050388092868, guid: 7b7c17dc434af46468db2266e8672d4c,
+        type: 3}
+      propertyPath: m_Name
+      value: smokeEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027546050388092891, guid: 7b7c17dc434af46468db2266e8672d4c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4515916869679322219, guid: 7b7c17dc434af46468db2266e8672d4c, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 7b7c17dc434af46468db2266e8672d4c, type: 3}
+--- !u!1 &7117868288677526962 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4515916869679322220, guid: 7b7c17dc434af46468db2266e8672d4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 6659835424112519646}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1849030521779572228 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5027546050388092890, guid: 7b7c17dc434af46468db2266e8672d4c,
+    type: 3}
+  m_PrefabInstance: {fileID: 6659835424112519646}
+  m_PrefabAsset: {fileID: 0}

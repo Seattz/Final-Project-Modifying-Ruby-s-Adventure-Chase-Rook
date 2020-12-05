@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+source .ucf/.env
+class_version=1
+template="https://github.com/UCF-GaiM/tutorial-rubys-adventure.git"
+if [ $# -ge 1 ]; then
+  if [[ $1 = "-v" ]]; then
+    echo $class_version
+    exit 0
+  elif [[ $1 = "--template" ]]; then
+    echo $template
+    exit 0
+  elif [[ $1 = '-h' ]]; then
+    echo "   test <stage>     Add the test framework for the associated stage of the project."
+    echo "                    stage=1 MiniGame unity scene present w/ Playercontroller."
+    echo "                    stage=2 Pick Up prefab created."
+    echo "                    stage=3 Scoring complete."
+  fi
+fi
