@@ -1,0 +1,7 @@
+Original Challenge: For the original challenge, I had almost everything complete. The biggest issue I actually had though, was figuring out how to implement win/loss music. This had not given me any trouble before, but this time around, the code was different, and the methods which I went about coding did not support the implementation of win/loss music. As of now, I have not successfully implemented win/loss music.
+
+Visual Challenge: Visually, I added two new animated NPC’s, being the Cat and the Dog we used in an earlier challenge. They both have a fully and properly animated idle animation and are working NPC’s, having a dialogue, and offering a quest which rewards you with a point you need to finish the game. 
+
+Audio Challenge: For audio, I added two new sound files. For starters, I added a sound effect which is played whenever Ruby picks up a bag of cogs. This was simple and worked well for the assignment. The second sound file I added plays whenever Ruby talks to an NPC. This goes for Jambi, Cat, and Dog. 
+
+Gameplay changes: For my first gameplay change, I added what I call the “Boss Bot.” The “Boss Bot,” is a regular Bot, twice the size, and colored blue. It walks slowly, but takes 3 cogs to fix, and will take away over half of Ruby’s health, should she be hit. This is absolutely a significant change, as I had to implement fresh code to allow the Bot to take multiple cogs before fixing.
