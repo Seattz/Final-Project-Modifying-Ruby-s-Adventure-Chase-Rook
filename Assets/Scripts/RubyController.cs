@@ -12,7 +12,7 @@ public class RubyController : MonoBehaviour
 
     public static int level = 1;
 
-    public static int cogValue = 4;
+    public static int cogValue = 5;
 
     //this paragraph of code is added as of part 2 of the challenge
     public int scoreValue = 0;
@@ -22,9 +22,11 @@ public class RubyController : MonoBehaviour
     public Text cog;
     public AudioClip musicClipOne;
     public AudioClip musicClipTwo;
+    public AudioClip interactClip;
     public AudioSource musicSource;
 
     bool gameOver = false;
+    bool gameOverWin = false;
     
     public GameObject projectilePrefab;
     public GameObject healthIncrease;
@@ -62,7 +64,7 @@ public class RubyController : MonoBehaviour
         scoreValue = 0;
         score.text = "Score: " + scoreValue.ToString();
 
-        cogValue = 4;
+        cogValue = 5;
         cog.text = "Cogs: " + cogValue.ToString();
      
         audioSource = GetComponent<AudioSource>();
@@ -119,6 +121,16 @@ public class RubyController : MonoBehaviour
                 if (character != null)
                 {
                     character.DisplayDialog();
+                    PlaySound(interactClip);
+                }
+
+                DogScriptNPC dogCharacter = hit.collider.GetComponent<DogScriptNPC>();
+                if (dogCharacter != null)
+                {
+                    dogCharacter.DisplayDialog();
+
+                    PlaySound(interactClip);
+                    ChangeScore(1);
                 }
             }
         }
@@ -127,12 +139,11 @@ public class RubyController : MonoBehaviour
         {
             speed = 0;
             gameOver = true;
-            loseText.text = "You lose! Press R to restart. Game created by Chase Rook.";
-            backgroundMusic.SetActive(false);
+            loseText.text = "You lose! Press R to restart. Game created by Chase Rook."; 
             musicSource.clip = musicClipTwo;
             musicSource.Play();
-            musicSource.loop = false;
-
+            backgroundMusic.SetActive(false);
+            
             if (Input.GetKey(KeyCode.R))
             {
                 if (gameOver == true)
@@ -142,6 +153,9 @@ public class RubyController : MonoBehaviour
             }
         }
 
+
+        if (level == 1)
+        {
         if (scoreValue == 4) //win function
         {
             winText.text = "Talk to Jambi to visit stage two!";
@@ -161,10 +175,11 @@ public class RubyController : MonoBehaviour
             }
         }
         }
+        }
 
         if (level == 2) //win function level 2
         {
-            if (scoreValue == 4)
+            if (scoreValue == 6)
             {
             winText.text = "You Win! Press R to restart. Game created by Chase Rook.";
             gameOver = true;
@@ -182,7 +197,7 @@ public class RubyController : MonoBehaviour
                 }
             }
         }
-        }
+    }
     }
     
     void FixedUpdate()
@@ -257,6 +272,10 @@ public class RubyController : MonoBehaviour
     {
         cogValue += 3;
         cog.text = "Cog: " + cogValue.ToString();
+    }
+
+    public void Music()
+    {
     }
 
     /*

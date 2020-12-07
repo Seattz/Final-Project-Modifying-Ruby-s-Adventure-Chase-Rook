@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AmmoScript : MonoBehaviour
 {
+    public AudioClip ammoClip;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -13,6 +14,8 @@ public class AmmoScript : MonoBehaviour
         {
             controller.ChangeCogs(1);
             Destroy(gameObject);
+
+            controller.PlaySound(ammoClip);
         }
     }
 }

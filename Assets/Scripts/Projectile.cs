@@ -7,6 +7,8 @@ public class Projectile : MonoBehaviour
 {
     Rigidbody2D rigidbody2d;
 
+    private EnemyControllerBoss enemyControllerBoss;
+
 /*
     private int scoreValue = 0;
     public Text score;
@@ -58,6 +60,12 @@ public class Projectile : MonoBehaviour
             SetScoreText ();
             */
             f.Fix();
+        }
+
+        EnemyControllerBoss g = other.collider.GetComponent<EnemyControllerBoss>();        
+        if (g != null)
+        {
+           g.Damage();
         }
 
 /*
